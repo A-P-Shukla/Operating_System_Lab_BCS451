@@ -1,0 +1,165 @@
+UNIX Commands: 
+ 
+1.  Date Command : 
+This command is used to display the current data and time. 
+Syntax: $date 
+ 
+2.  Calender Command : 
+This command is used to display the calendar of the year or the particular month of calendar year. 
+Syntax : 
+$cal<year> 
+$cal<month><year> 
+Here the first syntax gives the entire calendar for given year & the second Syntax gives the calendar 
+of reserved month of that year. 
+ 
+3.  Echo Command : 
+This command is used to print the arguments on the screen . 
+Syntax : $echo <text> 
+Multi line echo command : 
+To have the output in the same line , the following commands can be used. 
+Syntax : $echo <text\>text 
+To have the output in different line, the following command can be used. 
+Syntax : $echo “text 
+>line2 
+>line3” 
+ 
+4.  „who‟ Command : 
+It is used to display who are the users connected to our computer currently. 
+Syntax : $who – option‟s 
+Options : - 
+H–Display the output with headers. 
+b–Display the last booting date or time or when the system was lastely rebooted. 
+ 
+5.  „who am i‟ Command : 
+Display the details of the current working directory. 
+Syntax : $who am i 
+ 
+6.  „tty‟ Command : 
+It will display the terminal name. 
+Syntax : $tty 
+7.  „CLEAR‟ Command : 
+It is used to clear the screen. 
+Syntax : $clear 
+8.  „MAN‟ Command : 
+It help us to know about the particular command and its options & working. It is like 
+„help‟ command in windows . 
+Syntax : $man <command name> 
+ 
+9.  MANIPULATION Command : 
+It is used to manipulate the screen. Syntax :$tput<argument> 
+Arguments : 
+1. Clear – to clear the screen. 
+2. Longname – Display the complete name of the terminal. 
+3. SMSO – background become white and foreground become black color. 4.rmso – background 
+become black and foreground becomes white color. 5.Cols – Display the number of columns in our 
+terminals. 
+ 
+10.  LIST Command : 
+It is used to list all the contents in the current working directory. Syntax :$ls–options <arguments> 
+If the command does not contain any argument means it is working in the Current directory. 
+Options : 
+• a– used to list all the files including the hidden files. c– list all the files columnwise. 
+• d- list all the directories. 
+• m- list the files separated by commas. 
+• p- list files include „/‟ to all the directories. r- list the files in reverse alphabetical order. 
+• f- list the files based on the list modification date. x-list in column wise sorted order. 
+ 
+DIRECTORY RELATED COMMANDS 
+ 
+1.  Present Working Directory Command : 
+To print the complete path of the current working directory. 
+Syntax : $pwd 
+ 
+2.  MKDIR Command : 
+To create or make a new directory in a current directory .Syntax :$mkdir<directory name> 
+ 
+3.  CD Command : 
+To change or move the directory to mentioned directory .Syntax :$cd <directory name> 
+ 
+4.  RMDIR Command : 
+To remove a directory in the current directory & not the current directory itself. 
+Syntax :$rmdir<directory name> 
+ 
+ 
+FILE RELATED COMMANDS 
+ 
+1.  CREATE A FILE : 
+To create a new file in the current directory we use CAT command. 
+Syntax : 
+$cat > filename. 
+The > symbol is redirectory we use cat command. 
+2.  DISPLAY A FILE : 
+To display the content of file mentioned we use CAT command without „>‟ operator. 
+Syntax : 
+$cat <filename. 
+Options –s = to neglect the warning /error message. 
+ 
+3.  COPYING CONTENTS : 
+To copy the content of one file with another. If file doesnot exist, a new file is created 
+and if the file exists with some data then it is overwritten. 
+Syntax : 
+$ cat<filename source>>><destination filename> 
+Options : - -n content of file with numbers included with blank lines. 
+Syntax : 
+$cat –n <filename> 
+ 
+4.  SORTING A FILE : 
+To sort the contents in alphabetical order or in reverse order. 
+Syntax : 
+$sort <filename > 
+Option : $ sort –r <filename> 
+ 
+5.  COPYING CONTENTS FROM ONE FILE TO ANOTHER : 
+To copy the contents from source to destination file .so that both contents are same. 
+Syntax : 
+$cp<source filename><destination filename> 
+$cp<source filename path ><destination filename path> 
+ 
+6.  MOVE Command : 
+To completely move the contents from source file to destination file and to remove the source file. 
+Syntax : 
+$ mv<source filename><destination filename> 
+ 
+7.  REMOVE Command : 
+To permanently remove the file we use this command . 
+Syntax : 
+$rm<filename> 
+ 
+8.  WORD Command : 
+To list the content count of no of lines , words, characters . 
+Syntax : 
+$wc<filename> 
+Options : -c – to display no of characters. -l – to display only the lines. -w – to display the no of words. 
+ 
+9.  LINE PRINTER : 
+To print the line through the printer, we use lp command. 
+Syntax : 
+$lp<filename> 
+10.  PAGE Command : 
+This command is used to display the contents of the file page wise & next page can be 
+viewed by pressing the enter key. 
+Syntax : 
+$pg<filename> 
+ 
+11.  FILTERS AND PIPES 
+HEAD :It is used to display the top ten lines of file. Syntax: $head<filename> 
+TAIL :This command is used to display the last ten lines of file. 
+Syntax: $tail<filename> 
+PAGE : This command shows the page by page a screen full of information is displayed after which 
+the page command displays a prompt and passes for the user to strike the enter key to continue 
+scrolling. 
+Syntax: $page<filename> 
+MORE :It also displays the file page by page .To continue scrolling with more command ,press the 
+space bar key. 
+Syntax: $more<filename> 
+GREP :This command is used to search and print the specified patterns from the file. 
+Syntax: $grep [option] pattern <filename> 
+ 
+SORT :This command is used to sort the datas in some order. 
+Syntax: $sort<filename> 
+ 
+PIPE :It is a mechanism by which the output of one command can be channeled into the inputof 
+another command. 
+Syntax: $who | wc-l 
+TR :The tr filter is used to translate one set of characters from the standard inputs to another. 
+Syntax: $tr ―[a-z]‖ ―[A-Z]‖
